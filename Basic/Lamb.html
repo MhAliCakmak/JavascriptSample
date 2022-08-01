@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lamb on/off</title>
+    <style>
+        Button{
+            text-decoration: none;
+            font-family: arial;
+            font-size: 20px;
+            color: #000;
+            margin: 30px
+        }
+        .turn_off{
+            background-color: #be1414;
+           
+        }
+
+        .turn_on{
+            background-color: #0d9230;
+            
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <img id="lamb" src="./assets/img/lamb/turn_off.jpg" alt="off">
+    <br>
+    <Button class="turn_on" onclick="document.getElementById('lamb').src='./assets/img/lamb/turn_on.jpg'">On</Button>
+    <Button class="turn_off" onclick="document.getElementById('lamb').src='./assets/img/lamb/turn_off.jpg'">Off</Button>
+    </center>
+</body>
+</html>
