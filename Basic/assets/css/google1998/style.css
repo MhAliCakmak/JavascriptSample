@@ -62,8 +62,7 @@ footer{
     text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
-    background: linear-gradient(to left, #4285f4, #34a853, #fbbc05, #ea4335);
-    background-size: 200% auto;
+   text-align: center;
     color: white;
     text-decoration: none;
     cursor: pointer;
@@ -72,7 +71,7 @@ footer{
     background-attachment: scroll;
 
 }
-footer:hover{
+.foot:hover{
     background-position: right center;
     color: white;
     text-decoration: none;
@@ -84,10 +83,16 @@ footer::after{
     height: 2px;
     background: white;
     transition: width 0.2s;
+    text-decoration: none;
 }
 a{
     text-decoration: none;
     cursor: pointer;
+    color: white;
+}
+a:hover{
+    color: white;
+    text-decoration: none;
 }
 p{
     text-decoration: none;
@@ -105,6 +110,16 @@ p{
     font-style: arial;
 
 
+}
+.foot{
+    text-align: center;
+    border:solid rgb(91, 128, 184);
+    border-radius: 5px;
+    padding: 10px;
+    background: linear-gradient(to left, #4285f4, #34a853, #fbbc05, #ea4335);
+    background-size: 200% auto;
+    margin: 7px;
+    
 }
 #email{
     width: 70%;
