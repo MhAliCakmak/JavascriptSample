@@ -1,0 +1,23 @@
+nav{
+    z-index: 32;
+    display: flex;
+    padding: 16px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #cdd9e5b3;
+    background-color: #2d333b;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.search{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    
+}
+.f4{
+    font-size: 16px;
+}
+.f6{
+    font-size: 12px;
+}
