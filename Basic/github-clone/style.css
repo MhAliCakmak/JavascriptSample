@@ -1,23 +1,39 @@
-nav{
-    z-index: 32;
-    display: flex;
-    padding: 16px;
-    font-size: 14px;
-    line-height: 1.5;
-    color: #cdd9e5b3;
-    background-color: #2d333b;
-    align-items: center;
-    flex-wrap: nowrap;
+header {
+  position: fixed;
+  z-index: 5000;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #ffc907;
 }
-.search{
-    margin-left: auto;
-    display: flex;
-    align-items: center;
+.f4 {
+  font-size: 16px;
+}
+.f3 {
+  font-size: 20px;
+}
+.f2 {
+  font-size: 24px;
+}
+.f1 {
+  font-size: 28px;
+}
+.f0 {
+  font-size: 32px;
+}
+.f5 {
+  font-size: 14px;
+}
+.f6 {
+  font-size: 12px;
+}
+.main {
+  margin-top: 120px;
+}
+.color-fg-muted {
+  color: #ffc907;
+}
+.note{
     
-}
-.f4{
-    font-size: 16px;
-}
-.f6{
-    font-size: 12px;
+    font: size 10px;
 }
