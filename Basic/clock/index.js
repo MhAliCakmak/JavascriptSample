@@ -1,11 +1,8 @@
 
 let myname=document.getElementById('myName');
 
-var username=prompt("What is your name?");
 
 
-
-myname.innerHTML=`${username}`;
 
 function currentTime() {
     let date = new Date(); 
@@ -33,3 +30,36 @@ function currentTime() {
   }
 currentTime();
 
+let increase=document.getElementById('increase');
+let decrease=document.getElementById('decrease');
+let reset=document.getElementById('reset');
+let count=localStorage.getItem('counter');
+
+let counter=localStorage.getItem('counter')?Number(localStorage.getItem('counter')):0;
+document.getElementById('count').innerHTML=count;
+
+increase.addEventListener('click',()=>{
+    count++;
+    document.getElementById('count').innerHTML=count;
+    localStorage.setItem('counter',count);
+})
+
+decrease.addEventListener('click',()=>{
+    count--;
+    document.getElementById('count').innerHTML=count;
+    localStorage.setItem('counter',count);
+})
+
+reset.addEventListener('click',()=>{
+    count=0;
+    document.getElementById('count').innerHTML=count;
+    localStorage.setItem('counter',count);
+})
+
+let  email=document.getElementById('form');
+
+email.addEventListener("submit",(event)=>
+{
+    event.preventDefault()
+    console.log("event happened")
+})

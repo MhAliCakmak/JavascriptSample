@@ -13,8 +13,8 @@
     />
     <title>Javascript Clock Project</title>
   </head>
-  <body class="bg-dark text-light">
-    <div class="text-center">
+  <body class="bg-dark  text-light ">
+    <div class="text-center mt-5 translate-middle-y pt-5">
       <img
         src="https://static.wixstatic.com/media/16f128_09893f3207fd48e8a79d20cd8b1f8888~mv2.png/v1/fill/w_110,h_110,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/softremedy_edited_edited.png"
         alt=""
@@ -24,14 +24,54 @@
       <div class="text1 text-center">
         Merhaba, <strong><span id="myName"></span></strong>! Hoş geldin!
       </div>
-      <div id="myClock" class="clock" onload="currentTime()">
+      <div id="myClock" class="clock mt-3 " onload="currentTime()">
         <div class="text2 text-center">
             
           </div>
-        </div></div>
+        </div>
         <center><a href="http://softremedy.org" class="btn btn-primary mt-4 "> Anasayfa</a></center>
+      </div>
+      <center>
+        <div class="text3 text-center mt-5">
+          <p id="count"></p>
+        </div>
+        <button class="btn btn-primary m-2" id="increase" >Artır</button>
+        <button class="btn btn-info  m-2" id="reset">Reset</button>
+        <button class="btn btn-danger m-2" id="decrease" >Azalt</button>
+
+
+      </center>
      
     </div>
+    <footer>
+      <div class="container mt-5">
+        <h2 class="display-6">
+          <center>Subscribe to our newsletter</center>
+        </h2>
+        <form action="" id="form" method="get">
+          <div class="form-group w-75 mx-auto">
+            
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              name="email"
+              aria-describedby="emailHelp"
+              placeholder="Enter email"
+            />
+            
+              
+            
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+
+          </div>
+          <div class=" d-flex justify-content-center">
+            <button type="submit" class="btn btn-primary w-25 ">Submit</button>
+          </div>
+          
+        </form>
+      </div>
+    </footer>
     <script src="./index.js"></script>
   </body>
 </html>
