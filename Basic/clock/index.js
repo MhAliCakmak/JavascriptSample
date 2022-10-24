@@ -56,10 +56,51 @@ reset.addEventListener('click',()=>{
     localStorage.setItem('counter',count);
 })
 
-let  email=document.getElementById('form');
+let  form=document.getElementById('form');
+let list=document.getElementById('list');
 
-email.addEventListener("submit",(event)=>
+form.addEventListener("submit",(event)=>
 {
     event.preventDefault()
     console.log("event happened")
+    let score=document.getElementById('score').value;
+    let email=document.getElementById('email').value;
+    console.log(email)
+    localStorage.setItem('email',email);
+    localStorage.setItem('score',score);
+    if(email && score)
+    {
+        addItem(email,score);
+        form.reset();
+    }else{
+        warning();
+    }
+
+
 })
+{/* <div class="alert alert-warning" role="alert">
+  A simple warning alert—check it out!
+</div> */}
+
+const addItem=(email,score)=>
+{
+    let li=document.createElement('li');
+    li.innerHTML=` 
+    ${email}
+    <span class="badge bg-primary rounded-pill">${score}</span>
+    `;
+    li.className= `list-group-item text-dark d-flex justify-content-between align-items-center`
+   
+   
+    list.appendChild(li);
+}
+
+const warning=()=>
+{
+    let div=document.createElement('div');
+    div.className=`alert alert-warning alert-dismissible fade show`;
+    div.innerHTML=` <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>`;
+    
+    list.appendChild(div);
+}
